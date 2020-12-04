@@ -1,14 +1,107 @@
-<!doctype html>
-
-<html>
+<html lang="en">
   <head>
-    <title>INSERT TITLE HERE!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script src="bootstrap.bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/90f50068f8.js" crossorigin="anonymous"></script>
+    
+    <title>DecoShop</title>
   </head>
-
+  
   <body>
-    <!-- TODO: put your HTML code here! -->
+
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">First Last</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navdemo">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navdemo">
+          <ul class="navbar-nav ml-auto" style="font-size: 20px;">
+            <li class="nav-item"><a class="nav-link" href="#overview">Overivew</a></li>
+            <li class="nav-item"><a class="nav-link" href="#design">Design</a></li>
+            <li class="nav-item"><a class="nav-link" href="#takeaways">Takeaways</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="main">
+      <div class="container-fluid" style="padding-top: 40px; padding-bottom: 40px;">
+        <img class="img-fluid" src="images/cover.png" alt="coverphoto">
+      </div>
+
+      <div id="overview" class="container-fluid">
+        <h1>Overview</h1>
+    
+        <h2>This project creates <a style="color: #646464; font-weight: bold;" href="https://tranquil-eyrie-67058.herokuapp.com/">a furniture shopping app</a> with live filtering and sorting functionality, and a shopping cart for adding/removing items, as well as changing the quantity of items in the cart and displaying the total price. Such interface is widely used in online shopping websites nowadays, which could largely improve users’ shopping experience with a responsive and interactive design. </h2>
+        <h2>The interface created in this project uses React.js and React Bootstrap framework, and practices organizing components and making dynamic changes of data passing flow from scratch.</h2>
+        
+      </div>
+      <br>
+
+      <div id="design" class="container-fluid">
+        <h1>Design</h1>
+
+        <h2>The design of the website addresses the following usability issues:</h2>
+        <ul style="font-size:20px;">
+          <li>Each item displays in the simple, neat form of a card with item name, filtering/sorting criterias(category, color and price), aggregating category(price) and an add-to-cart button which would not confuse users with overlapped information among items.</li>
+          <li>The default interface displays all the items without any filtering or sorting. When the user hovers over or clicks on the button on the Navbar, it turns dark from light grey. This makes users informed of the filtering criteria they select when seeing the displayed items, and would not get confused with multiple filters.</li>
+          <li>The shopping cart session appears in the right column of the interface, which would keep the user informed of the items selected. If the user wants to add more of an item in the cart, he could just click on the “+” button below the item in the cart section. The “-” button works for decreasing the quantity of remaining items. If uses just want to remove the item, he could also click the remove button beneath. The items will be removed from the cart and the total price gets updated.</li>
+        </ul>
+
+        <h2>To see more details about the logic behind React and JavaScript, including organization of components, data passing flow and state changes triggers, please refer to the <a style="color: #646464; font-weight: bold;" href="https://github.com/jiamin-tang/Development-Interface">GitHub Repo</a>.</h2>
+
+      </div>
+      <br>
+
+      <div id="takeaways" class="container-fluid">
+        <h1>Takeaways</h1>
+        <h2>This project is a first step into React to create dynamic components of an interface from working on JavaScript to deploying a React App. When developing the App, it is important to make the whole structure simple and neat, including well-organized components, smooth data passing flow and interaction-triggered state changes.</h2>
+        
+      </div>
+
+
+    </div> 
+
+    <footer class="py-3" style="margin-top:80px;">
+
+      <div class="container" style="margin-top: 80px; margin-bottom: 10px;">
+
+        <div class="row">
+
+          <div class="col-3 d-flex justify-content-center">
+            <a href="https://www.google.com/" target="_blank" id="hvr-float"><i class="fa fa-medium" aria-hidden="true"></i></a>
+          </div>
+  
+          <div class="col-3 d-flex justify-content-center">
+            <a href="https://www.google.com/" target="_blank" id="hvr-float"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+  
+          <div class="col-3 d-flex justify-content-center">
+            <a href="https://www.google.com/" target="_blank" id="hvr-float"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+  
+          <div class="col-3 d-flex justify-content-center">
+            <a href="https://www.google.com/" target="_blank" id="hvr-float"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+      
+
+      <div class="container text-center">
+          <p class="my-10">© 2020</a><br>
+      </div>
+    </footer>
+    
+  
   </body>
+  
 </html>
